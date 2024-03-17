@@ -151,9 +151,14 @@ OBS: Caso queira adicionar uma resposta automatica ou remover alguma deve consul
     console.log(msg.body);
 
     comandos();
+    
     if(bot){
         respostasAutomaticas();
-}});
+    }    
+    setInterval(() => {
+  console.log(".");
+}, 30000)
+});
 // ------------------------------------------------ //
 
 client.initialize();
