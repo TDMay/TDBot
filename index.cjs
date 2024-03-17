@@ -3,6 +3,9 @@ const qrcode = require('qrcode-terminal')
 const axios = require('axios')
 const client = new Client();
 var bot = true;
+setInterval(() => {
+  console.log(".");
+}, 30000)
 var helpMenu = 
 `   *-HELP MENU-*
 O bot funciona com o index "!"
@@ -155,9 +158,6 @@ OBS: Caso queira adicionar uma resposta automatica ou remover alguma deve consul
     if(bot){
         respostasAutomaticas();
     }    
-    setInterval(() => {
-  console.log(".");
-}, 30000)
 });
 // ------------------------------------------------ //
 
